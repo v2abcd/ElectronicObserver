@@ -64,8 +64,8 @@ namespace ElectronicObserver.Window {
 
 			public void AddToTable( TableLayoutPanel table, int row ) {
 
-				table.Controls.Add( Number, 0, row );
-				table.Controls.Add( State, 1, row );
+				//table.Controls.Add( Number, 0, row );
+				table.Controls.Add( State, 0, row );
 
 				#region set RowStyle
 				RowStyle rs = new RowStyle( SizeType.AutoSize, 0 );
