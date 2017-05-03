@@ -490,7 +490,7 @@ namespace ElectronicObserver.Window {
 					Condition.Tag = ship.Condition;
 					SetConditionDesign( ship.Condition );
 
-					if ( ship.Condition < 49 ) {
+                    if ( ship.Condition < 49 ) {
 						TimeSpan ts = new TimeSpan( 0, (int)Math.Ceiling( ( 49 - ship.Condition ) / 3.0 ) * 3, 0 );
 						ToolTipInfo.SetToolTip( Condition, string.Format( "完全回復まで 約 {0:D2}:{1:D2}", (int)ts.TotalMinutes, (int)ts.Seconds ) );
 					} else {
@@ -638,7 +638,7 @@ namespace ElectronicObserver.Window {
 					else if ( cond < 50 )
 						Condition.BackColor = SystemColors.Control;
 					else
-						Condition.BackColor = Color.LightGreen;
+						Condition.BackColor = Color.Yellow;
 
 				} else {
 					Condition.BackColor = SystemColors.Control;
