@@ -136,7 +136,7 @@ namespace ElectronicObserver.Window {
 				AnchorageRepairingTimer.AutoSize = true;
 				//AnchorageRepairingTimer.Visible = false;
 
-				TableFleet.Controls.Add( AnchorageRepairingTimer, 1, 4 );
+				TableFleet.Controls.Add( AnchorageRepairingTimer, 0, 4 );
 
 				#region set RowStyle
 				RowStyle rs = new RowStyle( SizeType.AutoSize, 0 );
@@ -160,7 +160,7 @@ namespace ElectronicObserver.Window {
 				CombinedTag.AutoSize = true;
 				CombinedTag.Visible = false;
 
-				TableFleet.Controls.Add( CombinedTag, 1, 5 );
+				TableFleet.Controls.Add( CombinedTag, 0, 5 );
 
 				#region set RowStyle
 				RowStyle rs = new RowStyle( SizeType.AutoSize, 0 );
