@@ -24,14 +24,15 @@
 		/// </summary>
 		private void InitializeComponent() {
 			this.components = new System.ComponentModel.Container();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.ShipView = new System.Windows.Forms.DataGridView();
 			this.ShipView_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.ShipView_ShipType = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -195,14 +196,14 @@
             this.ShipView_Locked,
             this.ShipView_SallyArea});
 			this.ShipView.ContextMenuStrip = this.MenuMember;
-			dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-			dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle8.Font = new System.Drawing.Font("Meiryo UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-			dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-			dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.ShipView.DefaultCellStyle = dataGridViewCellStyle8;
+			dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+			dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle9.Font = new System.Drawing.Font("Meiryo UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+			dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
+			dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.ShipView.DefaultCellStyle = dataGridViewCellStyle9;
 			this.ShipView.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.ShipView.Location = new System.Drawing.Point(0, 0);
 			this.ShipView.Name = "ShipView";
@@ -227,8 +228,8 @@
 			// 
 			// ShipView_ShipType
 			// 
-			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			this.ShipView_ShipType.DefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			this.ShipView_ShipType.DefaultCellStyle = dataGridViewCellStyle2;
 			this.ShipView_ShipType.HeaderText = "艦種";
 			this.ShipView_ShipType.Name = "ShipView_ShipType";
 			this.ShipView_ShipType.ReadOnly = true;
@@ -236,8 +237,8 @@
 			// 
 			// ShipView_Name
 			// 
-			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			this.ShipView_Name.DefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			this.ShipView_Name.DefaultCellStyle = dataGridViewCellStyle3;
 			this.ShipView_Name.HeaderText = "艦名";
 			this.ShipView_Name.Name = "ShipView_Name";
 			this.ShipView_Name.ReadOnly = true;
@@ -300,8 +301,8 @@
 			// 
 			// ShipView_Slot1
 			// 
-			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			this.ShipView_Slot1.DefaultCellStyle = dataGridViewCellStyle3;
+			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			this.ShipView_Slot1.DefaultCellStyle = dataGridViewCellStyle4;
 			this.ShipView_Slot1.HeaderText = "装備1";
 			this.ShipView_Slot1.Name = "ShipView_Slot1";
 			this.ShipView_Slot1.ReadOnly = true;
@@ -310,8 +311,8 @@
 			// 
 			// ShipView_Slot2
 			// 
-			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			this.ShipView_Slot2.DefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			this.ShipView_Slot2.DefaultCellStyle = dataGridViewCellStyle5;
 			this.ShipView_Slot2.HeaderText = "装備2";
 			this.ShipView_Slot2.Name = "ShipView_Slot2";
 			this.ShipView_Slot2.ReadOnly = true;
@@ -320,8 +321,8 @@
 			// 
 			// ShipView_Slot3
 			// 
-			dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			this.ShipView_Slot3.DefaultCellStyle = dataGridViewCellStyle5;
+			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			this.ShipView_Slot3.DefaultCellStyle = dataGridViewCellStyle6;
 			this.ShipView_Slot3.HeaderText = "装備3";
 			this.ShipView_Slot3.Name = "ShipView_Slot3";
 			this.ShipView_Slot3.ReadOnly = true;
@@ -330,8 +331,8 @@
 			// 
 			// ShipView_Slot4
 			// 
-			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			this.ShipView_Slot4.DefaultCellStyle = dataGridViewCellStyle6;
+			dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			this.ShipView_Slot4.DefaultCellStyle = dataGridViewCellStyle7;
 			this.ShipView_Slot4.HeaderText = "装備4";
 			this.ShipView_Slot4.Name = "ShipView_Slot4";
 			this.ShipView_Slot4.ReadOnly = true;
@@ -340,8 +341,8 @@
 			// 
 			// ShipView_Slot5
 			// 
-			dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			this.ShipView_Slot5.DefaultCellStyle = dataGridViewCellStyle7;
+			dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			this.ShipView_Slot5.DefaultCellStyle = dataGridViewCellStyle8;
 			this.ShipView_Slot5.HeaderText = "装備5";
 			this.ShipView_Slot5.Name = "ShipView_Slot5";
 			this.ShipView_Slot5.ReadOnly = true;

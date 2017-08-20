@@ -79,6 +79,9 @@
 			this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
 			this.StripMenu_Tool_AlbumMasterShip = new System.Windows.Forms.ToolStripMenuItem();
 			this.StripMenu_Tool_AlbumMasterEquipment = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
+			this.StripMenu_Tool_AntiAirDefense = new System.Windows.Forms.ToolStripMenuItem();
+			this.StripMenu_Tool_FleetImageGenerator = new System.Windows.Forms.ToolStripMenuItem();
 			this.StripMenu_Debug = new System.Windows.Forms.ToolStripMenuItem();
 			this.StripMenu_Debug_LoadAPIFromFile = new System.Windows.Forms.ToolStripMenuItem();
 			this.StripMenu_Debug_LoadInitialAPI = new System.Windows.Forms.ToolStripMenuItem();
@@ -93,12 +96,9 @@
 			this.StripMenu_Help_Version = new System.Windows.Forms.ToolStripMenuItem();
 			this.StripStatus = new System.Windows.Forms.StatusStrip();
 			this.StripStatus_Information = new System.Windows.Forms.ToolStripStatusLabel();
-			this.StripStatus_Padding = new System.Windows.Forms.ToolStripStatusLabel();
 			this.StripStatus_Clock = new System.Windows.Forms.ToolStripStatusLabel();
 			this.UIUpdateTimer = new System.Windows.Forms.Timer(this.components);
 			this.MainDockPanel = new WeifenLuo.WinFormsUI.Docking.DockPanel();
-			this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
-			this.StripMenu_Tool_AntiAirDefense = new System.Windows.Forms.ToolStripMenuItem();
 			this.StripMenu.SuspendLayout();
 			this.StripStatus.SuspendLayout();
 			this.SuspendLayout();
@@ -466,7 +466,8 @@
             this.StripMenu_Tool_AlbumMasterShip,
             this.StripMenu_Tool_AlbumMasterEquipment,
             this.toolStripSeparator11,
-            this.StripMenu_Tool_AntiAirDefense});
+            this.StripMenu_Tool_AntiAirDefense,
+            this.StripMenu_Tool_FleetImageGenerator});
 			this.StripMenu_Tool.Name = "StripMenu_Tool";
 			this.StripMenu_Tool.Size = new System.Drawing.Size(66, 20);
 			this.StripMenu_Tool.Text = "ツール(&T)";
@@ -529,6 +530,25 @@
 			this.StripMenu_Tool_AlbumMasterEquipment.Size = new System.Drawing.Size(164, 22);
 			this.StripMenu_Tool_AlbumMasterEquipment.Text = "装備図鑑(&E)";
 			this.StripMenu_Tool_AlbumMasterEquipment.Click += new System.EventHandler(this.StripMenu_Tool_AlbumMasterEquipment_Click);
+			// 
+			// toolStripSeparator11
+			// 
+			this.toolStripSeparator11.Name = "toolStripSeparator11";
+			this.toolStripSeparator11.Size = new System.Drawing.Size(161, 6);
+			// 
+			// StripMenu_Tool_AntiAirDefense
+			// 
+			this.StripMenu_Tool_AntiAirDefense.Name = "StripMenu_Tool_AntiAirDefense";
+			this.StripMenu_Tool_AntiAirDefense.Size = new System.Drawing.Size(164, 22);
+			this.StripMenu_Tool_AntiAirDefense.Text = "対空砲火詳細(&A)";
+			this.StripMenu_Tool_AntiAirDefense.Click += new System.EventHandler(this.StripMenu_Tool_AntiAirDefense_Click);
+			// 
+			// StripMenu_Tool_FleetImageGenerator
+			// 
+			this.StripMenu_Tool_FleetImageGenerator.Name = "StripMenu_Tool_FleetImageGenerator";
+			this.StripMenu_Tool_FleetImageGenerator.Size = new System.Drawing.Size(164, 22);
+			this.StripMenu_Tool_FleetImageGenerator.Text = "編成画像出力(&F)";
+			this.StripMenu_Tool_FleetImageGenerator.Click += new System.EventHandler(this.StripMenu_Tool_FleetImageGenerator_Click);
 			// 
 			// StripMenu_Debug
 			// 
@@ -626,7 +646,6 @@
 			this.StripStatus.ImageScalingSize = new System.Drawing.Size(32, 32);
 			this.StripStatus.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.StripStatus_Information,
-            this.StripStatus_Padding,
             this.StripStatus_Clock});
 			this.StripStatus.Location = new System.Drawing.Point(0, 458);
 			this.StripStatus.Name = "StripStatus";
@@ -637,14 +656,10 @@
 			// StripStatus_Information
 			// 
 			this.StripStatus_Information.Name = "StripStatus_Information";
-			this.StripStatus_Information.Size = new System.Drawing.Size(104, 17);
+			this.StripStatus_Information.Size = new System.Drawing.Size(556, 17);
+			this.StripStatus_Information.Spring = true;
 			this.StripStatus_Information.Text = "Now Preparing...";
-			// 
-			// StripStatus_Padding
-			// 
-			this.StripStatus_Padding.Name = "StripStatus_Padding";
-			this.StripStatus_Padding.Size = new System.Drawing.Size(483, 17);
-			this.StripStatus_Padding.Spring = true;
+			this.StripStatus_Information.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// StripStatus_Clock
 			// 
@@ -671,18 +686,6 @@
 			this.MainDockPanel.ShowDocumentIcon = true;
 			this.MainDockPanel.Size = new System.Drawing.Size(640, 434);
 			this.MainDockPanel.TabIndex = 0;
-			// 
-			// toolStripSeparator11
-			// 
-			this.toolStripSeparator11.Name = "toolStripSeparator11";
-			this.toolStripSeparator11.Size = new System.Drawing.Size(161, 6);
-			// 
-			// StripMenu_Tool_AntiAirDefense
-			// 
-			this.StripMenu_Tool_AntiAirDefense.Name = "StripMenu_Tool_AntiAirDefense";
-			this.StripMenu_Tool_AntiAirDefense.Size = new System.Drawing.Size(164, 22);
-			this.StripMenu_Tool_AntiAirDefense.Text = "対空砲火詳細(&A)";
-			this.StripMenu_Tool_AntiAirDefense.Click += new System.EventHandler(this.StripMenu_Tool_AntiAirDefense_Click);
 			// 
 			// FormMain
 			// 
@@ -718,7 +721,6 @@
 		private System.Windows.Forms.ToolStripMenuItem StripMenu_Debug_LoadAPIFromFile;
 		private System.Windows.Forms.Timer UIUpdateTimer;
 		private System.Windows.Forms.ToolStripStatusLabel StripStatus_Information;
-		private System.Windows.Forms.ToolStripStatusLabel StripStatus_Padding;
 		private System.Windows.Forms.ToolStripStatusLabel StripStatus_Clock;
 		private System.Windows.Forms.ToolStripMenuItem StripMenu_View;
 		private System.Windows.Forms.ToolStripMenuItem StripMenu_View_Fleet;
@@ -786,5 +788,6 @@
 		private System.Windows.Forms.ToolStripMenuItem StripMenu_View_Json;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator11;
 		private System.Windows.Forms.ToolStripMenuItem StripMenu_Tool_AntiAirDefense;
+		private System.Windows.Forms.ToolStripMenuItem StripMenu_Tool_FleetImageGenerator;
 	}
 }
